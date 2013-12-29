@@ -7,12 +7,15 @@ from string import maketrans
 file_name=str(sys.argv[1])
 probe_len=int(sys.argv[2])
 probe_len_float=float(format(probe_len, '.2f'))
+
 #declare variables
 sense='atcg'
 a_sense='tagc'
 rc=maketrans(sense, a_sense)
+
 spacer=probe_len
 oldcounter=-probe_len
+
 good_probes=list()
 final_probes=list()
 
